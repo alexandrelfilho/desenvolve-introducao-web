@@ -1,0 +1,393 @@
+/* Estilos globais */
+*{
+    scroll-margin-top: 6em; /* Define a margem para rolagem suave */
+    scroll-behavior: smooth; /* Adiciona efeito de rolagem suave */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para o cabeçalho */
+header{
+    position: sticky; /* Fixa o cabeçalho no topo da página */
+    top: 0;
+}
+
+/* Estilos para a seção Sistema Solar */
+#Sistema-Solar {
+    margin-top: 3em; /* Margem superior */
+    text-align: center; /* Centraliza o conteúdo da seção */
+    margin-bottom: 40px; /* Espaço inferior entre a seção e o próximo conteúdo */
+}
+
+#Sistema-Solar .imagens-planetas {
+    display: flex; /* Container flexível para alinhar imagens lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente, se necessário */
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+}
+
+#Sistema-Solar .imagens-planetas a {
+    display: block; /* Faz com que cada imagem ocupe todo o espaço do seu contêiner */
+    flex: 1 1 auto; /* Permite que as imagens tenham tamanho automático */
+    text-align: center; /* Centraliza o conteúdo do link (a tag) */
+    margin: 0px; /* Espaçamento entre as imagens */
+}
+
+#Sistema-Solar .imagens-planetas a img {
+    width: 100%; /* Faz com que as imagens ocupem todo o espaço disponível */
+    height: auto; /* Mantém a proporção da altura */
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+
+#Sistema-Solar .imagens-planetas a:hover img {
+    transform: scale(1.3); /* Aumenta a escala da imagem ao passar o mouse */
+}
+
+#estrela {
+    margin: 8em 0; /* Margem superior e inferior para o elemento #estrela */
+}
+
+.imagens-planetas p {
+    margin: 4em; /* Margem ao redor do parágrafo dentro de .imagens-planetas */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilos específicos para cada imagem de planeta */
+.imagem-sssol {
+    max-width: 400px; /* Tamanho máximo do Sol */
+}
+
+.imagem-ssmercurio {
+    max-width: 40px; /* Tamanho máximo de Mercúrio */
+}
+
+.imagem-ssvenus {
+    max-width: 90px; /* Tamanho máximo de Vênus */
+}
+
+.imagem-ssterra {
+    max-width: 110px; /* Tamanho máximo da Terra */
+}
+
+.imagem-ssmarte {
+    max-width: 95px; /* Tamanho máximo de Marte */
+}
+
+.imagem-ssjupiter {
+    max-width: 180px; /* Tamanho máximo de Júpiter */
+}
+
+.imagem-sssaturno {
+    max-width: 400px; /* Tamanho máximo de Saturno */
+}
+
+.imagem-ssurano {
+    max-width: 100px; /* Tamanho máximo de Urano */
+}
+
+.imagem-ssnetuno {
+    max-width: 100px; /* Tamanho máximo de Netuno */
+}
+
+.imagem-ssplutao {
+    margin-right: 6em; /* Margem à direita para o elemento .imagem-ssplutao */
+    max-width: 20px; /* Tamanho máximo de Plutão */
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+    margin: 0; /* Remove margens padrão */
+    background-image: url('fundo.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center; /* Posição central */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #000000a8; /* Cor de fundo do cabeçalho com transparência */
+    color: #fff; /* Cor do texto */
+    padding: 1em 1em; /* Espaçamento interno do cabeçalho */
+    display: flex; /* Container flexível */
+    justify-content: space-between; /* Alinha os itens de forma espaçada */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o menu de navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin-right: 20px; /* Margem direita entre os itens */
+}
+
+nav ul li a {
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: color 0.3s ease; /* Transição suave da cor do texto */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cor do texto do link ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 0px; /* Preenchimento zero */
+}
+
+section {
+    margin-bottom: 40px; /* Margem inferior para as seções */
+}
+
+/* Estilos para títulos h1, h2, h3 */
+h1, h2, h3 {
+    text-align: center; /* Centraliza os títulos */
+    color: #ffffff; /* Cor do texto dos títulos */
+    margin-bottom: 0px; /* Margem inferior zero */
+}
+
+/* Estilos para a classe .cont-sol */
+.cont-sol {
+    padding: 0em 4em; /* Preenchimento */
+    text-align: justify; /* Justificação do texto */
+    margin-bottom: 10em; /* Margem inferior */
+}
+
+/* Estilos para a classe .imagem-astro */
+.imagem-astro {
+    width: 40%; /* Largura da imagem */
+    display: block; /* Exibe como bloco */
+    margin: 4em auto; /* Margem automática */
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática */
+}
+
+/* Estilos para a classe .imagem-planetas */
+.imagem-planetas {
+    width: 10%; /* Largura da imagem */
+    display: block; /* Exibe como bloco */
+    margin: auto; /* Margem automática */
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática */
+    margin-top: 2em; /* Margem superior */
+    margin-bottom: 6em; /* Margem inferior */
+}
+
+/* Estilos para a classe .imagem-saturno */
+.imagem-saturno {
+    width: 20%; /* Largura da imagem */
+    display: block; /* Exibe como bloco */
+    margin: auto; /* Margem automática */
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática */
+}
+
+/* Estilos para a classe .planeta */
+.planeta {
+    text-align: justify; /* Justificação do texto */
+    background-color: #22222248; /* Cor de fundo com transparência */
+    padding: 3em; /* Preenchimento */
+    margin-bottom: 2em; /* Margem inferior */
+}
+
+.planeta h3 {
+    margin-top: 0; /* Margem superior para o título */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #33333334; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 1px 0px; /* Preenchimento do rodapé */
+    bottom: 0; /* Posiciona no fundo da página */
+    width: 100%; /* Largura total */
+}
+
+/* Estilos para elementos responsivos */
+.hambimg {
+    display: none; /* Oculta a imagem do menu hamburguer */
+}
+
+.carousel {
+    display: none; /* Oculta o carousel */
+}
+
+/* Media queries para telas até 1548px */
+@media (max-width: 1548px) {
+    #Sistema-Solar .imagens-planetas {
+        display: none; /* Oculta as imagens do Sistema Solar */
+    }
+
+    .carousel {
+        display: block; /* Exibe o carousel */
+    }
+
+    /* Estilos específicos para cada imagem de planeta */
+    .imagem-sssol {
+        max-width: 400px; /* Tamanho máximo do Sol */
+    }
+    .imagem-ssmercurio {
+        max-width: 400px; /* Tamanho máximo de Mercúrio */
+    }
+    .imagem-ssvenus {
+        max-width: 400px; /* Tamanho máximo de Vênus */
+    }
+    .imagem-ssterra {
+        max-width:  400px; /* Tamanho máximo da Terra */
+    }
+    .imagem-ssmarte {
+        max-width: 400px; /* Tamanho máximo de Marte */
+    }
+    .imagem-ssjupiter {
+        max-width:  400px; /* Tamanho máximo de Júpiter */
+    }
+    .imagem-sssaturno {
+        margin: 75px 0; /* Margem superior e inferior para Saturno */
+        max-width:  400px; /* Tamanho máximo de Saturno */
+    }
+    .imagem-ssurano {
+        max-width:  400px; /* Tamanho máximo de Urano */
+    }
+    .imagem-ssnetuno {
+        max-width:  400px; /* Tamanho máximo de Netuno */
+    }
+    .imagem-ssplutao {
+        max-width: 400px; /* Tamanho máximo de Plutão */
+    }
+    .carousel-item img{
+        margin: 5em auto; /* Margem superior e inferior para as imagens do carousel */
+    }
+    .imagem-planetas {
+        width: 50%; /* Largura das imagens de planetas */
+        margin-top: 2em; /* Margem superior */
+        margin-bottom: 6em; /* Margem inferior */
+    }
+    .imagem-saturno {
+        width: 50%; /* Largura de Saturno */
+        margin-top: 2em; /* Margem superior */
+        margin-bottom: 6em; /* Margem inferior */
+    }
+}
+
+/* Media queries para telas até 768px */
+@media (max-width: 768px) {
+    /* Estilos para o cabeçalho */
+    header {
+        flex-direction: column; /* Direção da coluna para o cabeçalho */
+        align-items: flex-start; /* Alinhamento à esquerda */
+    }
+
+    nav ul {
+        text-align: center; /* Centraliza o texto do menu de navegação */
+    }
+
+    nav ul li {
+        display: block; /* Exibe os itens do menu como blocos */
+        margin: 0; /* Remove a margem */
+    }
+    .hambimg {
+        display: block; /* Exibe a imagem do menu hamburguer */
+    }
+    .hambimg img {
+        width: 1em; /* Largura da imagem do menu hamburguer */
+    }
+    header{
+        display: flex; /* Exibe o cabeçalho como flexível */
+        flex-direction: row; /* Direção da linha */
+        align-items: center; /* Centraliza verticalmente */
+    }
+    header nav ul {
+        display: none; /* Oculta o menu de navegação */
+    }
+    #Sistema-Solar {
+        text-align: center; /* Centraliza o texto */
+        margin: 0; /* Remove a margem */
+        padding: 0; /* Remove o preenchimento */
+    }
+   
+    /* Estilos específicos para cada imagem de planeta */
+    .imagem-sssol {
+        max-width: 80%; /* Tamanho máximo do Sol */
+    }
+    .imagem-ssmercurio {
+        max-width: 80%; /* Tamanho máximo de Mercúrio */
+    }
+    .imagem-ssvenus {
+        max-width: 80%; /* Tamanho máximo de Vênus */
+    }
+    .imagem-ssterra {
+        max-width:  80%; /* Tamanho máximo da Terra */
+    }
+    .imagem-ssmarte {
+        max-width: 80%; /* Tamanho máximo de Marte */
+    }
+    .imagem-ssjupiter {
+        max-width:  80%; /* Tamanho máximo de Júpiter */
+    }
+    .imagem-sssaturno {
+        margin: 17% 0; /* Margem superior e inferior para Saturno */
+        max-width:  80%; /* Tamanho máximo de Saturno */
+    }
+    .imagem-ssurano {
+        max-width:  80%; /* Tamanho máximo de Urano */
+    }
+    .imagem-ssnetuno {
+        max-width:  80%; /* Tamanho máximo de Netuno */
+    }
+    .imagem-ssplutao {
+        max-width: 80%; /* Tamanho máximo de Plutão */
+    }
+    
+    /* Estilos para a classe .planeta */
+    .planeta {
+        padding: 1em; /* Preenchimento */
+        margin-bottom: 01em; /* Margem inferior */
+    }
+    
+    /* Estilos para a classe .imagem-planetas */
+    .imagem-planetas {
+        width: 50%; /* Largura das imagens de planetas */
+        margin-top: 2em; /* Margem superior */
+        margin-bottom: 6em; /* Margem inferior */
+    }
+    
+    /* Estilos para a classe .imagem-saturno */
+    .imagem-saturno {
+        width: 50%; /* Largura de Saturno */
+        margin-top: 2em; /* Margem superior */
+        margin-bottom: 6em; /* Margem inferior */
+    }
+    
+    /* Estilos para a classe .cont-sol */
+    .cont-sol {
+        padding: 0em 1em; /* Preenchimento */
+        margin-bottom: 6em; /* Margem inferior */
+    }
+}
+
+/* Media queries para telas até 364px */
+@media (max-width: 364px) {
+    /* Estilos para a classe .imagem-planetas */
+    .imagem-planetas {
+        width: 90%; /* Largura das imagens de planetas */
+        margin-top: 2em; /* Margem superior */
+        margin-bottom: 6em; /* Margem inferior */
+    }
+    
+    /* Estilos para a classe .imagem-saturno */
+    .imagem-saturno {
+        width: 90%; /* Largura de Saturno */
+        margin-top: 2em; /* Margem superior */
+        margin-bottom: 6em; /* Margem inferior */
+    }
+}
