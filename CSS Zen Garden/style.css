@@ -35,6 +35,11 @@ header h1, header h2 {
 .sidebar-menu li {
     margin-bottom: 1em;
     text-align: center;
+    border-top: 1px solid #6f4f28;
+}
+
+.sidebar-menu li:last-child {
+    border-bottom: 1px solid #6f4f28;
 }
 
 footer {
@@ -110,13 +115,16 @@ h3 {
 }
 
 a {
-    color: #004d00;
-    text-decoration: none;
+    color: #6f4f28;
+    font-weight: bold;
 }
 
 a:hover {
-    color: #6f4f28;
-    text-decoration: underline;
+    color: #004d00;
+}
+
+a:visited {
+    font-weight: normal;
 }
 
 button {
@@ -188,4 +196,11 @@ abbr {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.section-main p::first-letter {
+    font-size: 3em;
+    float: left;
+    font-family: 'Georgia', serif;
+    margin-right: 0.1em;
 }
