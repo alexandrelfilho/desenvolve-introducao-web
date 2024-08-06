@@ -56,3 +56,101 @@ footer a {
 footer a:hover {
     background-color: #6f4f28;
 }
+
+.page-wrapper {
+    position: relative;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+.menu-designs {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding: 0 2%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #6f4f28;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #6f4f28;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6f4f28;
+}
+
+.section-summary {
+    text-align: right;
+}
+
+.section-main p {
+    line-height: 1.5;
+}
+
+a {
+    color: #004d00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6f4f28;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #6f4f28;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8b5e3c;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #6f4f28;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #004d00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #6f4f28;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #004d00;
+    color: #ffffff;
+}
+
+abbr {
+    font-variant: small-caps;
+}
