@@ -42,6 +42,9 @@ footer {
     color: #ffffff;
     padding: 1em 0;
     margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 footer a {
@@ -50,7 +53,8 @@ footer a {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
-    margin: 0.5em;
+    width: 100px;
+    text-align: center;
 }
 
 footer a:hover {
@@ -67,6 +71,9 @@ footer a:hover {
     border-right: 1px solid #1f295c;
     padding-right: 2%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-designs {
@@ -153,4 +160,32 @@ th {
 
 abbr {
     font-variant: small-caps;
+}
+
+.benefits-section {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #1f295c;
+}
+
+.benefits-section .text {
+    width: 70%;
+}
+
+.benefits-section .title {
+    width: 30%;
+    text-align: right;
+}
+
+.participation-section {
+    display: flex;
+    border-top: 1px solid #1f295c;
+    border-bottom: 1px solid #1f295c;
+}
+
+.participation-section .item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
