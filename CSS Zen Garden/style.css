@@ -1,0 +1,60 @@
+body {
+    background-color: #e0f2e9;
+    color: #004d00;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #6f4f28;
+}
+
+a {
+    color: #004d00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6f4f28;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #6f4f28;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8b5e3c;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #6f4f28;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #004d00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #6f4f28;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #004d00;
+    color: #ffffff;
+}
