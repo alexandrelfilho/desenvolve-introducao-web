@@ -204,3 +204,81 @@ abbr {
     font-family: 'Georgia', serif;
     margin-right: 0.1em;
 }
+
+@media (max-width: 768px) {
+    .menu-designs {
+        position: static; /* Remove o posicionamento absoluto */
+        margin: 0 auto; /* Centraliza o menu de design */
+        padding: 0; /* Remove o padding */
+    }
+
+    .explanation {
+        width: 100%; /* Remove a largura fixa */
+        margin-right: 0; /* Remove a margem direita */
+        border-right: none; /* Remove a borda lateral direita */
+        padding-right: 0; /* Remove o padding direito */
+        display: block; /* Muda para display block para empilhar os elementos */
+    }
+
+    .benefits-section, .participation-section {
+        flex-direction: column; /* Empilha os itens verticalmente */
+    }
+
+    header {
+        height: auto; /* Remove a altura fixa do cabeçalho */
+    }
+
+    .section-main p {
+        text-indent: 0; /* Remove o espaçamento inicial dos parágrafos */
+    }
+}
+
+@media print {
+    body {
+        font-family: Times, serif; /* Muda a fonte para serifada */
+        background-color: #ffffff; /* Define o fundo da página como branco */
+        color: #000000; /* Define a cor do texto como preto */
+    }
+
+    header, footer {
+        background-color: #ffffff; /* Define o fundo do cabeçalho e rodapé como branco */
+        color: #000000; /* Define a cor do texto como preto */
+    }
+
+    footer a {
+        border: 2px solid #000000; /* Altera a cor da borda dos links do rodapé */
+        color: #000000; /* Define a cor do texto dos links como preto */
+    }
+
+    /* Remove o fundo escuro dos cabeçalhos e tabelas para impressão */
+    th, .section-summary, .benefits-section, .participation-section {
+        background-color: #ffffff; /* Fundo branco para cabeçalhos e seções */
+        color: #000000; /* Cor do texto preto */
+    }
+}
+
+header h1, header h2 {
+    color: #ffffff; /* Altera a cor do texto para branco */
+}
+
+.explanation {
+    width: 60%; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo ao centro */
+    align-items: center;
+    text-align: center; /* Opcional: centraliza o texto dentro da explicação */
+}
+
+@media (max-width: 768px) {
+    .explanation {
+        width: 100%; /* Remove a largura fixa em dispositivos menores */
+        margin: 0; /* Remove a margem automática */
+        padding-right: 0; /* Remove o padding direito */
+        border-right: none; /* Remove a borda lateral direita */
+    }
+}
+
